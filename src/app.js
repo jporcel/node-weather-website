@@ -21,7 +21,7 @@ app.use(express.static(publicPath));
 //routes
 app.get('', (req, res)=>{
    res.render('index', {
-       title: 'Application',
+       title: 'Weather',
        name: 'Jeff'
    });
 });
