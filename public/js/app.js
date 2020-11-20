@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit',(event)=>{
     event.preventDefault();
     message.textContent = 'Loading...';
     const address = search.value;
-    const weatherUrl = 'http://localhost/weather?address=' + address;
+    const weatherUrl = '/weather?address=' + address;
     fetch(weatherUrl).then((response)=>{
         response.json().then((data)=>{
             console.log(data);
